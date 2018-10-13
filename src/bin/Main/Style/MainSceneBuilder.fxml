@@ -47,6 +47,6 @@
             <Image url="@../../../icon/icons8-book-100.png" />
          </image>
       </ImageView>
-      <Button fx:id="GoogleButton" layoutX="217.0" layoutY="69.0" mnemonicParsing="false" onAction="#loadGoogle" text="Google" />
+      <Button layoutX="217.0" layoutY="69.0" mnemonicParsing="false" onAction="#loadGoogle" text="Google" />
    </children>
 </AnchorPane>

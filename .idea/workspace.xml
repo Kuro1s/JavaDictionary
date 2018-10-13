@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="" />
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/Style/GoogleLoader.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/Style/GoogleLoader.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/Style/MainSceneBuilder.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/Style/MainSceneBuilder.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/Style/StyleBuilder.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/Style/StyleBuilder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/controller/Controller$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/controller/Controller$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/controller/Controller$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/controller/Controller$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/controller/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaDictionary/bin/Main/controller/Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/Main/Style/GoogleLoader.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/Main/Style/GoogleLoader.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/Main/Style/MainSceneBuilder.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/Main/Style/MainSceneBuilder.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/Main/Style/StyleBuilder.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/Main/Style/StyleBuilder.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bin/Main/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bin/Main/controller/Controller.java" afterDir="false" />
+    </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,7 +31,7 @@
     <SUITE FILE_PATH="coverage/JavaDictionary$Main__1_.ic" NAME="MainTest Coverage Results" MODIFIED="1539280797386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>GoogleAPI.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/JavaDictionary$Main.ic" NAME="Main Coverage Results" MODIFIED="1539407626773" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/JavaDictionary$Main.ic" NAME="Main Coverage Results" MODIFIED="1539450048025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>bin.Main.controller.*</FILTER>
     </SUITE>
   </component>
@@ -73,42 +86,46 @@
     <session id="2036650058">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="7" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.29" value="1" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.56" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.open.time.70" value="1" />
+          <entry key="project.opened" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
+          <entry key="css" value="32" />
           <entry key="dummy" value="4" />
-          <entry key="fxml" value="8" />
-          <entry key="java" value="1155" />
+          <entry key="fxml" value="20" />
+          <entry key="java" value="1416" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1155" />
+          <entry key="CSS" value="32" />
+          <entry key="JAVA" value="1416" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="XML" value="8" />
+          <entry key="XML" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="3" />
           <entry key="fxml" value="3" />
-          <entry key="java" value="11" />
+          <entry key="java" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="3" />
-          <entry key="JAVA" value="11" />
+          <entry key="JAVA" value="13" />
           <entry key="XML" value="3" />
         </counts>
       </usages-collector>
@@ -122,8 +139,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bin/Main/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="207">
+              <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,11 +163,9 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/bin/Main/controller/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="249" column="36" selection-start-line="249" selection-start-column="36" selection-end-line="249" selection-end-column="36" />
+            <state relative-caret-position="-144">
+              <caret line="189" column="37" selection-start-line="189" selection-start-column="37" selection-end-line="189" selection-end-column="37" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="method#searchWord#0;class#Controller#0" />
                 <element signature="method#setCalendarDisplay#0;class#Controller#0" />
                 <element signature="method#setClockDisplay#0;class#Controller#0" />
               </folding>
@@ -159,28 +174,53 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/bin/Main/Style/GoogleLoader.fxml">
+        <entry file="file://$PROJECT_DIR$/src/bin/Dictionary/Dic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="46">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bin/Main/Style/GoogleLoader.fxml">
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="219" selection-start-line="9" selection-start-column="219" selection-end-line="9" selection-end-column="219" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bin/Main/controller/GoogleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="16" column="23" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bin/Main/Style/MainSceneBuilder.fxml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="273" selection-start-line="11" selection-start-column="243" selection-end-line="11" selection-end-column="273" />
+          <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="1127">
+              <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
             </state>
           </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/bin/Main/Style/StyleBuilder.css">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1794">
+              <caret line="78" column="1" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -188,8 +228,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -197,6 +237,9 @@
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -210,13 +253,14 @@
         <option value="$PROJECT_DIR$/src/GoogleAPI/GoogleTranslate.java" />
         <option value="$PROJECT_DIR$/src/GoogleAPI/Main.java" />
         <option value="$PROJECT_DIR$/src/GoogleAPI/Audio.java" />
-        <option value="$PROJECT_DIR$/src/bin/Main/Style/StyleBuilder.css" />
         <option value="$PROJECT_DIR$/src/GoogleAPI/MainTest.java" />
         <option value="$PROJECT_DIR$/src/bin/Internet/InternetConnected.java" />
         <option value="$PROJECT_DIR$/src/bin/Main/controller/GoogleLoader.fxml" />
-        <option value="$PROJECT_DIR$/src/bin/Main/Style/GoogleLoader.fxml" />
-        <option value="$PROJECT_DIR$/src/bin/Main/Style/MainSceneBuilder.fxml" />
         <option value="$PROJECT_DIR$/src/bin/Main/main/Main.java" />
+        <option value="$PROJECT_DIR$/src/bin/Main/Style/MainSceneBuilder.fxml" />
+        <option value="$PROJECT_DIR$/src/bin/Main/controller/GoogleController.java" />
+        <option value="$PROJECT_DIR$/src/bin/Main/Style/GoogleLoader.fxml" />
+        <option value="$PROJECT_DIR$/src/bin/Main/Style/StyleBuilder.css" />
         <option value="$PROJECT_DIR$/src/bin/Main/controller/Controller.java" />
       </list>
     </option>
@@ -227,13 +271,20 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand />
+      <select />
+    </treeState>
+  </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="85" />
     <option name="y" value="25" />
     <option name="width" value="1750" />
     <option name="height" value="970" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
     <option name="STATE" value="0" />
   </component>
@@ -242,7 +293,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -260,6 +310,13 @@
               <item name="JavaDictionary" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="JavaDictionary" type="b2602c69:ProjectViewProjectNode" />
+              <item name="JavaDictionary" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="Dictionary" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="JavaDictionary" type="b2602c69:ProjectViewProjectNode" />
@@ -297,6 +354,7 @@
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -309,9 +367,9 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539364215098" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1539447581760" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Github/Dictonarydemo" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -452,18 +510,19 @@
       <workItem from="1539278670472" duration="3749000" />
       <workItem from="1539355476693" duration="8691000" />
       <workItem from="1539406796999" duration="1187000" />
+      <workItem from="1539435447764" duration="11392000" />
+      <workItem from="1539449704242" duration="536000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17858000" />
+    <option name="totallyTimeSpent" value="29786000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2" />
-      <window_info id="Structure" order="1" weight="0.24966443" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.20536913" />
+      <window_info id="Structure" order="1" visible="true" weight="0.24966443" />
       <window_info id="Favorites" order="2" weight="0.3295302" />
       <window_info id="Designer" order="3" />
       <window_info id="Image Layers" order="4" />
@@ -492,7 +551,7 @@
       <window_info anchor="right" id="JetGradle" order="3" />
       <window_info anchor="right" id="Database" order="4" />
       <window_info anchor="right" id="Palette" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.3295302" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -508,6 +567,20 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/bin/Main/controller/Controller.java</url>
+          <line>72</line>
+          <properties class="bin.Main.controller.Controller" method="searchWord">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -551,6 +624,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/bin/Main/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="15" column="15" selection-start-line="15" selection-start-column="15" selection-end-line="15" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/GoogleAPI/MainTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -561,42 +644,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bin/Main/Style/StyleBuilder.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bin/Main/Style/MainSceneBuilder.fxml">
+    <entry file="file://$PROJECT_DIR$/src/bin/Dictionary/Dic.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="273" selection-start-line="11" selection-start-column="243" selection-end-line="11" selection-end-column="273" />
+        <state relative-caret-position="46">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/bin/Main/Style/GoogleLoader.fxml">
+    <entry file="file://$PROJECT_DIR$/src/bin/Main/controller/GoogleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/bin/Main/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="38" />
+        <state relative-caret-position="207">
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="16" selection-end-line="16" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/bin/Main/Style/MainSceneBuilder.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="1127">
+          <caret line="49" column="13" selection-start-line="49" selection-start-column="13" selection-end-line="49" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bin/Main/Style/StyleBuilder.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1794">
+          <caret line="78" column="1" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bin/Main/Style/GoogleLoader.fxml">
+      <provider selected="true" editor-type-id="JavaFX-Scene-Builder" />
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="219" selection-start-line="9" selection-start-column="219" selection-end-line="9" selection-end-column="219" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/bin/Main/controller/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="249" column="36" selection-start-line="249" selection-start-column="36" selection-end-line="249" selection-end-column="36" />
+        <state relative-caret-position="-144">
+          <caret line="189" column="37" selection-start-line="189" selection-start-column="37" selection-end-line="189" selection-end-column="37" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#searchWord#0;class#Controller#0" />
             <element signature="method#setCalendarDisplay#0;class#Controller#0" />
             <element signature="method#setClockDisplay#0;class#Controller#0" />
           </folding>

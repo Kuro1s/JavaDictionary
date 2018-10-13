@@ -6,6 +6,7 @@ import bin.Internet.InternetConnected;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
+import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
@@ -23,7 +24,9 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseButton;
 import javafx.scene.web.WebView;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 import javafx.util.Duration;
 import javazoom.jl.decoder.JavaLayerException;
 import java.io.IOException;
@@ -34,6 +37,7 @@ import java.util.Calendar;
 import java.util.ResourceBundle;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
 public class Controller implements Initializable {
     private String URL1 = "C:/Users/Asus/Desktop/JavaDictionary/src/Data/V_E.txt";
     private String URL2 = "C:/Users/Asus/Desktop/JavaDictionary/src/Data/E_V.txt";
@@ -63,20 +67,20 @@ public class Controller implements Initializable {
     private TextField textField;
     @FXML
     private Button AudioButton;
-    @FXML
-    private Button GoogleButton;
+
     //hàm hiện từ lên listview và gợi ý từ tìm kiếm
-    @FXML public void searchWord(){
+    @FXML
+    public void searchWord() {
         ObservableList<String> listWord = FXCollections.observableArrayList(dictionary.Word);
         FilteredList<String> filteredData = new FilteredList<>(listWord, s -> true);
         listView.setItems(filteredData);
         textField.textProperty().addListener((observable, oldValue, newValue) -> {
-            filteredData.setPredicate(s ->{
-                if(newValue ==null|| newValue.isEmpty()){
+            filteredData.setPredicate(s -> {
+                if (newValue == null || newValue.isEmpty()) {
                     return true;
                 }
-                String tolower= newValue.toLowerCase();
-                if(s.toLowerCase().startsWith(tolower)){
+                String tolower = newValue.toLowerCase();
+                if (s.toLowerCase().startsWith(tolower)) {
                     return true;
                 }
                 return false;
@@ -84,19 +88,20 @@ public class Controller implements Initializable {
             listView.setItems(filteredData);
         });
     }
-    public void setKeyPressed(){
+
+    public void setKeyPressed() {
         //TODO : bắt Mouse Event khi click vào listView
         listView.setOnMousePressed(event -> {
-            if(event.getButton() == MouseButton.PRIMARY){
+            if (event.getButton() == MouseButton.PRIMARY) {
                 String text = (String) listView.getSelectionModel().getSelectedItem();
                 textField.setText(text);
                 webView.getEngine().loadContent(dictionary.Data.get(text));
             }
         });
     }
-
     /**
      * Chương trình sử lý sự kiên cho các Button
+     *
      * @param event
      */
     public void SearchButtonEvent(ActionEvent event) {
@@ -118,12 +123,11 @@ public class Controller implements Initializable {
                 alert.show();
             } else webView.getEngine().loadContent(dictionary.Data.get(text));
         }
-        if(event.getSource() == engvietButton){
+        if (event.getSource() == engvietButton) {
             dictionary.readData(URL2);
             setKeyPressed();
             searchWord();
-        }
-        else if(event.getSource() == vietengButton){
+        } else if (event.getSource() == vietengButton) {
             dictionary.readData(URL1);
             searchWord();
             setKeyPressed();
@@ -159,26 +163,33 @@ public class Controller implements Initializable {
         clock.setCycleCount(Animation.INDEFINITE);
         clock.play();
     }
+
     public void SearchTextFieldEvent() {
         textField.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
             public void handle(KeyEvent e) {
 
                 if (e.getCode() == KeyCode.ENTER) { //nhấn enter để tìm kiếm
-                    String text = textField.getText();
-                    if ("".equals(text)) {
-                        Alert alert = new Alert(Alert.AlertType.WARNING);
-                        alert.setTitle("THÔNG BÁO");
-                        alert.setHeaderText("                       TỪ CHƯA ĐƯỢC NHẬP!");
-                        alert.setContentText("*WARNING: FBI");
-                        alert.show();
-                    } else if (dictionary.Data.get(text) == null) {
-                        Alert alert = new Alert(Alert.AlertType.ERROR);
-                        alert.setTitle("THÔNG BÁO");
-                        alert.setHeaderText("                TỪ VỪA NHẬP KHÔNG HỢP LỆ!");
-                        alert.setContentText("*ERROR: 404");
-                        alert.show();
-                    } else webView.getEngine().loadContent(dictionary.Data.get(text));
+                    if (index == 0) {
+                        String text = textField.getText();
+                        if ("".equals(text)) {
+                            Alert alert = new Alert(Alert.AlertType.WARNING);
+                            alert.setTitle("THÔNG BÁO");
+                            alert.setHeaderText("                       TỪ CHƯA ĐƯỢC NHẬP!");
+                            alert.setContentText("*WARNING: FBI");
+                            alert.show();
+                        } else if (dictionary.Data.get(text) == null) {
+                            Alert alert = new Alert(Alert.AlertType.ERROR);
+                            alert.setTitle("THÔNG BÁO");
+                            alert.setHeaderText("                TỪ VỪA NHẬP KHÔNG HỢP LỆ!");
+                            alert.setContentText("*ERROR: 404");
+                            alert.show();
+                        } else webView.getEngine().loadContent(dictionary.Data.get(text));
+                    } else {
+                        if (listView.getSelectionModel().getSelectedItem() != null) {
+                            textField.setText((String) listView.getSelectionModel().getSelectedItem());
+                        }
+                    }
                 } else if (e.getCode() == KeyCode.DOWN) {
                     listView.getSelectionModel().select(index); //chọn item vị trí trong listview
                     listView.getFocusModel().focus(index);
@@ -195,10 +206,10 @@ public class Controller implements Initializable {
             }
         });
     }
+
     // Hàm xử lý cho list View
     public void chooseitem() {
         listView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-
             public void changed(
                     ObservableValue<? extends String> observable,
                     String oldValue, String newValue) {
@@ -208,17 +219,16 @@ public class Controller implements Initializable {
     }
 
     /**
-     *  hàm sử lý Button Audio bằng Google API
+     * hàm sử lý Button Audio bằng Google API
+     *
      * @param event
      * @throws IOException
      * @throws InterruptedException
      */
-    public void speak(ActionEvent event) throws IOException, InterruptedException
-    {
-        if(event.getSource() == AudioButton)
-        {
+    public void speak(ActionEvent event) throws IOException, InterruptedException {
+        if (event.getSource() == AudioButton) {
             String str = textField.getText();
-            if(InternetConnected.IsConnecting() == true){
+            if (InternetConnected.IsConnecting() == true) {
                 try {
                     InputStream sound = null;
                     Audio audio = Audio.getInstance();
@@ -229,8 +239,7 @@ public class Controller implements Initializable {
                 } catch (JavaLayerException ex) {
                     Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
                 }
-            }
-            else {
+            } else {
                 Alert alert = new Alert(Alert.AlertType.WARNING);
                 alert.setTitle("THÔNG BÁO");
                 alert.setHeaderText("KHÔNG CÓ KẾT NỐI INTERNET");
@@ -239,21 +248,25 @@ public class Controller implements Initializable {
             }
         }
     }
+
     public void loadGoogle(ActionEvent event) {
-        if (event.getSource() == GoogleButton) {
-            try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../Style/GoogleLoader.fxml"));
-                Parent root1 = fxmlLoader.load();
-                Stage stage = new Stage();
-                Scene scene = new Scene(root1);
-                stage.setTitle("Hello World");
-                stage.setScene(scene);
-                stage.show();
-            } catch (Exception e) {
-                System.out.println("cant load new window");
-            }
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../Style/GoogleLoader.fxml"));
+            Parent root1 = fxmlLoader.load();
+            Stage stage = new Stage();
+            stage.setTitle("Hello World");
+            Scene scene = new Scene(root1);
+            scene.getStylesheets().add(getClass().getResource("../Style/StyleBuilder.css").toExternalForm());
+            stage.setScene(scene);
+            stage.initStyle(StageStyle.UNDECORATED);
+            stage.initModality(Modality.APPLICATION_MODAL);
+            Platform.setImplicitExit(false);
+            stage.showAndWait();
+        } catch (Exception e) {
+            System.out.println("cant load new window");
         }
     }
+
     @Override
     /**
      * Chương trình khởi tạo môi trường cho từ điển
