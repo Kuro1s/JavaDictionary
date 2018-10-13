@@ -1,0 +1,83 @@
+#AnchorPane{
+    -fx-background-color: rgba(112, 224, 65, 0.1);
+    -fx-padding: 5 5 5 5;
+    -fx-font-weight: bold;
+}
+#searchButton{
+    -fx-background-color:
+            #4d90fe,
+            linear-gradient(#257cff 50%, #4d90fe 100%),
+            radial-gradient(center 50% -40%, radius 100%, white 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+#searchButton:hover{
+    -fx-background-color:
+            linear-gradient(from 0% 100% to 0% 100%, #3695ff 0%, #3695ff 100),
+            #3695ff,
+            #3695ff,
+            radial-gradient(center 50% 50%,radius 100%,#3695ff,#3695ff);
+}
+#textField{
+    -fx-border-width: 0.5px;
+    -fx-border-color: #ACACAC;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-font-size: 15px;
+    -fx-padding: 5px;
+    -fx-font-weight: 600;
+    -fx-font-family: 'Open-Sans, Arial';
+}
+#searchButton:pressed
+{
+    -fx-padding: 1 10 1 10;
+    -fx-background-insets: 0 0 0 0,0 0 0 0,0 0 0 0,0 0 0 0;
+}
+.ListView{
+    -fx-background-color: #f1f1f1;
+}
+#Text{
+    -fx-padding: 2 205 2 250;
+    -fx-background-color: #4d90fe;
+    -fx-text-color: #fffbfb;
+
+}
+#Text1{
+    -fx-background-color: #4d90fe;
+    -fx-padding: 2 60 2 60;
+    -fx-label-color: #fffbfb;
+}
+.EngViet
+{
+    -fx-padding: 8 15 15 15;
+    -fx-background-insets: 0,0 0 5 0,0 0 6 0,0 0 7 0;
+    -fx-background-radius: 8;
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%, #4e71ff 0%, #4e71ff 100%),
+            #4e71ff,
+            #06a7ff,
+            radial-gradient(center 50% 50%, radius 100%,#06a7ff,#4e71ff);
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.75),4,0,0,1);
+    -fx-font-weight: bold;
+    -fx-font-size: 1.4em;
+    -fx-text-fill: white;
+}
+
+.EngViet:hover
+{
+
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%,#4e71ff 0%,#4e71ff 100),
+            #06a7ff,
+            #4e71ff,
+            radial-gradient(center 50% 50%,radius 100%, #3695ff,#4e71ff);
+}
+
+.EngViet:pressed
+{
+    -fx-padding: 10 15 13 15;
+    -fx-background-insets: 2 0 0 0,2 0 3 0,2 0 4 0,2 0 5 0;
+
+}

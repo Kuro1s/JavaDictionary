@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="311.0" prefWidth="499.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bin.Main.controller.Controller">
+   <children>
+      <Label contentDisplay="CENTER" layoutX="122.0" layoutY="67.0" prefHeight="127.0" prefWidth="256.0" text="Second Window" />
+   </children>
+</AnchorPane>
