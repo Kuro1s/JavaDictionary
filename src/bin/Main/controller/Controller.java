@@ -67,7 +67,6 @@ public class Controller implements Initializable {
     private TextField textField;
     @FXML
     private Button AudioButton;
-
     //hàm hiện từ lên listview và gợi ý từ tìm kiếm
     @FXML
     public void searchWord() {
