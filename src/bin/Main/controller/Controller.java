@@ -228,15 +228,26 @@ public class Controller implements Initializable {
         if (event.getSource() == AudioButton) {
             String str = textField.getText();
             if (InternetConnected.IsConnecting() == true) {
-                try {
-                    InputStream sound = null;
-                    Audio audio = Audio.getInstance();
-                    sound = audio.getAudio(str, Language.ENGLISH);
-                    audio.play(sound);
-                } catch (IOException ex) {
-                    Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (JavaLayerException ex) {
-                    Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+                if(!"".equals(str))
+                {
+                    try {
+                        InputStream sound = null;
+                        Audio audio = Audio.getInstance();
+                        sound = audio.getAudio(str, Language.ENGLISH);
+                        audio.play(sound);
+                    } catch (IOException ex) {
+                        Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+                    } catch (JavaLayerException ex) {
+                        Logger.getLogger(Controller.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                }
+                else
+                {
+                    Alert alert = new Alert(Alert.AlertType.ERROR);
+                    alert.setTitle("THÔNG BÁO");
+                    alert.setHeaderText("KHÔNG PHÁT HIỆN TỪ");
+                    alert.setContentText("*ERROR : 404");
+                    alert.show();
                 }
             } else {
                 Alert alert = new Alert(Alert.AlertType.WARNING);
@@ -248,21 +259,30 @@ public class Controller implements Initializable {
         }
     }
 
-    public void loadGoogle(ActionEvent event) {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../Style/GoogleLoader.fxml"));
-            Parent root1 = fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Hello World");
-            Scene scene = new Scene(root1);
-            scene.getStylesheets().add(getClass().getResource("../Style/StyleBuilder.css").toExternalForm());
-            stage.setScene(scene);
-            stage.initStyle(StageStyle.UNDECORATED);
-            stage.initModality(Modality.APPLICATION_MODAL);
-            Platform.setImplicitExit(false);
-            stage.showAndWait();
-        } catch (Exception e) {
-            System.out.println("cant load new window");
+    public void loadGoogle(ActionEvent event) throws InterruptedException, IOException{
+        if(InternetConnected.IsConnecting() == true) {
+            try {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../Style/GoogleLoader.fxml"));
+                Parent root1 = fxmlLoader.load();
+                Stage stage = new Stage();
+                stage.setTitle("Hello World");
+                Scene scene = new Scene(root1);
+                scene.getStylesheets().add(getClass().getResource("../Style/StyleBuilder.css").toExternalForm());
+                stage.setScene(scene);
+                stage.initStyle(StageStyle.UNDECORATED);
+                stage.initModality(Modality.APPLICATION_MODAL);
+                Platform.setImplicitExit(false);
+                stage.show();
+            } catch (Exception e) {
+                System.out.println("cant load new window");
+            }
+        }
+        else{
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setTitle("THÔNG BÁO:");
+            alert.setHeaderText("KHÔNG CÓ KẾT NỐI INTERNET");
+            alert.setContentText("*WARNING: FBI");
+            alert.showAndWait();
         }
     }
 

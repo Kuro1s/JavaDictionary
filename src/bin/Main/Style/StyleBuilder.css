@@ -94,3 +94,14 @@
 #Home1{
     -fx-background-color: #00ccff;
 }
+.ChoiBox
+{
+    -fx-border-width: 0.5px;
+    -fx-border-color: #ACACAC;
+    -fx-border-radius: 50px;
+    -fx-background-radius: 50px;
+    -fx-font-size: 15px;
+    -fx-padding: 5px;
+    -fx-font-weight: 600;
+    -fx-font-family: 'Open-Sans, Arial';
+}
