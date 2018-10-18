@@ -8,6 +8,15 @@ import javafx.scene.control.ButtonType;
 import javafx.stage.Stage;
 
 public class Main extends Application {
+    private static FXMLLoader mLoader;
+
+    public static FXMLLoader getLoader() {
+        return mLoader;
+    }
+
+    public static void setLoader(FXMLLoader tempLoader) {
+        mLoader = tempLoader;
+    }
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(this.getClass().getResource("../Style/MainSceneBuilder.fxml"));

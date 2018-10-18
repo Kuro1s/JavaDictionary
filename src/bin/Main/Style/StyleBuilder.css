@@ -1,24 +1,13 @@
 #AnchorPane{
-    -fx-background-color: rgba(69, 255, 26, 0.63);
+    -fx-background-color: rgba(234, 255, 131, 0.63);
     -fx-padding: 5 5 5 5;
     -fx-font-weight: bold;
 }
 #searchButton{
-    -fx-background-color:
-            #4d90fe,
-            linear-gradient(#257cff 50%, #4d90fe 100%),
-            radial-gradient(center 50% -40%, radius 100%, white 45%, rgba(230,230,230,0) 50%);
-    -fx-background-radius: 30;
-    -fx-background-insets: 0,1,1;
-    -fx-text-fill: black;
-    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+    -fx-background-color: none;
 }
 #searchButton:hover{
-    -fx-background-color:
-            linear-gradient(from 0% 100% to 0% 100%, #3695ff 0%, #3695ff 100),
-            #3695ff,
-            #3695ff,
-            radial-gradient(center 50% 50%,radius 100%,#3695ff,#3695ff);
+
 }
 #textField{
     -fx-border-width: 0.5px;
@@ -32,8 +21,7 @@
 }
 #searchButton:pressed
 {
-    -fx-padding: 1 10 1 10;
-    -fx-background-insets: 0 0 0 0,0 0 0 0,0 0 0 0,0 0 0 0;
+
 }
 .ListView{
     -fx-background-color: #f1f1f1;
@@ -88,11 +76,11 @@
     -fx-font-weight: bold;
 }
 #Home1:hover{
-    -fx-background-color: #0088ff;
+    -fx-background-color: #00ccff;
 }
 
 #Home1{
-    -fx-background-color: #00ccff;
+    -fx-background-color: #0088ff;
 }
 .ChoiBox
 {
@@ -104,4 +92,60 @@
     -fx-padding: 5px;
     -fx-font-weight: 600;
     -fx-font-family: 'Open-Sans, Arial';
+}
+#Vbox
+{
+  -fx-background-color: #4e71ff;
+    -fx-border-color: rgba(234, 255, 131, 0.63);
+}
+.HboxButton
+{
+    -fx-background-color: none;
+    -fx-background-radius: 30px;
+    -fx-text-fill: #fff;
+}
+.HboxButton:hover{
+    -fx-background-color: #3695ff;
+    -fx-effect: : dropshadow(three-pass-box, ##3695ff, 5, 0, 2, 5);
+}
+.HboxButton:pressed{
+    -fx-background-color: #3695ff;
+    -fx-effect: : none;
+}
+#Hbox
+{
+    -fx-background-color: rgba(69, 255, 26, 0.63);
+    -fx-border-color: rgba(234, 255, 131, 0.63);
+}
+.VBoxButton
+{
+    -fx-background-color:
+            #4d90fe,
+            linear-gradient(#257cff 50%, #4d90fe 100%),
+            radial-gradient(center 50% -40%, radius 100%, white 45%, rgba(230,230,230,0) 50%);
+    -fx-background-radius: 30;
+    -fx-background-insets: 0,1,1;
+    -fx-text-fill: black;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+}
+.VBoxButton:hover
+{
+    -fx-background-color:
+            linear-gradient(from 0% 93% to 0% 100%,#4e71ff 0%,#4e71ff 100),
+            #06a7ff,
+            #4e71ff,
+            radial-gradient(center 50% 50%,radius 100%, #3695ff,#4e71ff);
+}
+.VBoxButton:pressed
+{
+    -fx-background-color: #4e71ff;
+    -fx-effect: none;
+}
+#GoogleAnchorPane
+{
+    -fx-border-color: rgba(69, 255, 26, 0.63);
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 3, 0.0 , 0 , 1 );
+    -fx-background-color: rgba(255, 251, 84, 0.99);
+    -fx-padding: 5 5 5 5;
+    -fx-font-weight: bold;
 }

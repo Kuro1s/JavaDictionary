@@ -42,11 +42,21 @@ public class GoogleController implements Initializable {
     @FXML
     private ChoiceBox<String> Box2;
 
+    /**
+     * phương thức xử lý cho button return stage home
+     * khi click vào nút home sẽ tắt cửa sổ googe dịch và trở về cửa sổ Main
+     * @param event
+     */
     public void ReturnHome(ActionEvent event) {
         Stage stage = (Stage) Home.getScene().getWindow();
         stage.close();
     }
 
+    /**
+     *  Xử lý cho phím ENTER khi nhập văn bản
+     *  TODO : sau khi nhập văn bản từ TextArea1 nhấn Enter sẽ đc dịch luôn sang TextArea2 không cầm bấm button search cho màu mè
+     *
+     */
     public void setENTERKeyPressed() {
         GoogletextArea.setOnKeyPressed(new EventHandler<KeyEvent>() {
             @Override
@@ -74,6 +84,11 @@ public class GoogleController implements Initializable {
         });
     }
 
+    /**
+     * Hàm xử lý cho Button search
+     * @param event
+     * @throws IOException
+     */
     public void setGooglesearchButton(ActionEvent event) throws IOException {
         if (event.getSource() == GooglesearchButton) {
             String text = GoogletextArea.getText();
@@ -91,7 +106,11 @@ public class GoogleController implements Initializable {
             }
         }
     }
-
+    /**
+     * Hàm xử lý cho Button speak
+     * @param event
+     * @throws IOException
+     */
     public void setGooglespeakButton(ActionEvent event) throws IOException, JavaLayerException {
         if (event.getSource() == GooglespeakButton) {
             String rescb1 = map.get(Box1.getValue());
